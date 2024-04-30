@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Unit Converter</h1>
+        <nav>
+            <ul>
+                <li><a href="#temperature">Temperature</a></li>
+                <li><a href="#weight">Weight</a></li>
+                <li><a href="#distance">Distance</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="temperature">
+        <figure>
+            <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png" width="200px" alt="temperature image"/>
+            <figcaption>Celsius to Fahrenheit Conversion</figcaption>
+          </figure>
+        <h2>Temperature Converter</h2>
+        <article>
+            <p>Convert temperature from Celsius to Fahrenheit:</p>
+            <label for="celsiusInput">Celsius:</label>
+            <input type="number" id="celsiusInput">
+            <button onclick="convertTemperature()">Convert</button>
+            <p id="fahrenheitOutput"></p>
+        </article>
+    </section>
+
+    <section id="weight">
+        <figure>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_dg0XIMzxl99bNH2obxKD7ozF9pxZZXjaUiF5kRpwq7d3sELJSgalhWfg12dfOxrWkO8&usqp=CAU" width="200px" alt="Lb-Kg image"/>
+            <figcaption>Kilograms to Pounds Conversion</figcaption>
+          </figure>
+        <h2>Weight Converter</h2>
+        <article>
+            <p>Convert weight from Kilograms to Pounds:</p>
+            <label for="kilogramsInput">Kilograms:</label>
+            <input type="number" id="kilogramsInput">
+            <button onclick="convertWeight()">Convert</button>
+            <p id="poundsOutput"></p>
+        </article>
+    </section>
+
+    <section id="distance">
+        <figure>
+            <img src="https://play-lh.googleusercontent.com/sVOUM14lqUz2N-bD_pne-TOTjxb1nWbTZ3TjmY4GgLy2MDMXTYCe_0HXBHzcBmwWYfo" width="200px" alt="Lb-Kg image"/>
+            <figcaption>Kilometres to Miles Conversion</figcaption>
+          </figure>
+        <h2>Distance Converter</h2>
+        <article>
+            <p>Convert distance from Kilometers to Miles:</p>
+            <label for="kilometersInput">Kilometers:</label>
+            <input type="number" id="kilometersInput">
+            <button onclick="convertDistance()">Convert</button>
+            <p id="milesOutput"></p>
+        </article>
+    </section>
+
+
+    <script> src ="script.js"</script>
+</body>
+</html>
